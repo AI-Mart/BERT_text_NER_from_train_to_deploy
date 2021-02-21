@@ -1,0 +1,9 @@
+本地CMD运行部署：
+e:
+cd E:\AI_train\Z2_NER\Z_GOVLAND_NER_TF14\model_deploy_NER
+python run_server.py -mode=NER -bert_model_dir=roeberta_zh_L-12_H-768_A-12 -model_dir=output -model_pb_dir=output -max_seq_len=420
+
+服务器xshell运行部署:
+python3 run_server.py -mode=NE_dir=/home/mart/model_deploy/output -model_pb_dir=/home/mart/model_deploy/output -max_seq_len=420 -port=5755 -port_out=5756R -bert_model_dir=/home/mart/model_deploy/roeberta_zh_L-12_H-768_A-12 -model
+
+注意模型所在位置的路径的更改
